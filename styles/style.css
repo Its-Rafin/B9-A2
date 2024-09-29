@@ -44,9 +44,6 @@
 }
 
 /* End Button CSS */
-
-
-
 .nav-container {
     margin-top: 20px;
     margin-bottom: 30px;
@@ -195,6 +192,102 @@
     /* 162.5% */
 }
 
+/* Destination Section CSS */
+.destination-section {
+    margin-bottom: 100px;
+}
+
+.section-description {
+    width: 643px;
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: var(--font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 24px auto 48px auto;
+}
+
+.destination-section-img img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.destination-section-img {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.destination-name {
+    position: absolute;
+    top: 46%;
+    left: 38%;
+    color: #FFF;
+    text-align: center;
+    font-family: var(--font);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+/* Service section CSS */
+.title-description {
+    color: #131318;
+    font-family: var(--font);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.map {
+    width: 573px;
+    height: 284px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    padding: 32px;
+    align-self: flex-end;
+}
+
+.map p,
+.price-tag p {
+    width: 486px;
+    color: #5A5A5D;
+    font-family: var(--font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.price-tag {
+    width: 573px;
+    height: 284px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    padding: 32px;
+    align-self:center;
+}
+
+.map img,
+.price-tag img {
+    margin-bottom: 32px;
+}
+
 /* Mobile device Responsive css*/
 @media screen and (max-width: 576px) {
 
@@ -282,4 +375,53 @@
         /* 171.429% */
     }
 
+    .section-description {
+        color: rgba(19, 19, 24, 0.70);
+        text-align: center;
+        font-family: var(--font);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 171.429% */
+        width: 309px;
+        margin-top: -6px;
+    }
+
+    /* Destinaton Responsive Css */
+    .destination-section-img .row {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    /* Service Responsive CSS */
+    .service-section {
+        margin-top: -74px;
+    }
+
+    .section-content {
+        margin: -24px 0;
+    }
+
+    .service-card {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .service-card .map, .service-card .price-tag {
+        width: 382px;
+        height: 289px;
+        overflow: hidden;
+    }
+
+    .service-card .map p, .service-card .price-tag p {
+        width: 300px;
+    }
+
+    .map img,
+    .price-tag img {
+        margin-bottom: 16px;
+    }
 }
