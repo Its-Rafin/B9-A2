@@ -52,7 +52,9 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    transition: .5s;
 }
+
 /* All Button general CSS */
 .primary-button a,
 .secondary-button a,
@@ -284,6 +286,18 @@
     gap: 24px;
 }
 
+.hotel {
+    width: 573px;
+    height: 284px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 32px;
+    align-self: center;
+
+}
+
 .map {
     width: 573px;
     height: 284px;
@@ -295,6 +309,7 @@
     align-self: flex-end;
 }
 
+.hotel p,
 .map p,
 .price-tag p {
     width: 486px;
@@ -317,16 +332,20 @@
     align-self: center;
 }
 
+.hotel img,
 .map img,
 .price-tag img {
     margin-bottom: 32px;
 }
 
 /* Discount Section CSS */
+.discount-section {
+    margin-top: 100px;
+}
 
 .discount-container {
     position: relative;
-    background-image: url(/Images/Rectangle\ 12.png);
+    background-image: url(../Images/Rectangle\ 12.png);
     width: 100%;
     border-radius: 16px;
     background-size: cover;
@@ -353,8 +372,7 @@
 
 .discount-container-2 {
     position: relative;
-    background-image: url(/Images/Rectangle\ 13.png);
-    width: 100%;
+    background-image: url(../Images/Rectangle\ 13.png);
     border-radius: 16px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -412,7 +430,28 @@
     line-height: normal;
 }
 
-/* Mobile device Responsive css*/
+/* Perfect section css */
+.perfect-section ul li p {
+    color: #131318;
+    font-family: var(--font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.perfect-section video {
+    width: 610px;
+    height: 424px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #131318 -31.96%, rgba(19, 19, 24, 0.00) 100%);
+}
+
+
+/* ----Mobile device Responsive css---*/
+/* ----Mobile device Responsive css---*/
+
 @media screen and (max-width: 576px) {
 
     /* nav-responsive css */
@@ -471,7 +510,7 @@
 
     /* Popular Responsive CSS */
     .popular-section {
-        margin: 24px 0;
+        margin: 48px 0;
     }
 
     .popular-container {
@@ -512,7 +551,11 @@
         margin-top: -6px;
     }
 
-    /* Destinaton Responsive Css */
+    .primary-button {
+        margin-top: 24px;
+    }
+
+    /* Destination Responsive Css */
     .destination-section-img .row {
         display: flex;
         flex-direction: column;
@@ -534,20 +577,85 @@
         align-self: center;
     }
 
+    .hotel,
     .service-card .map,
     .service-card .price-tag {
-        width: 382px;
+        width: 388px;
         height: 289px;
         overflow: hidden;
     }
 
-    .service-card .map p,
+    .hotel .service-card .map p,
     .service-card .price-tag p {
         width: 300px;
     }
 
+    .hotel img,
     .map img,
     .price-tag img {
         margin-bottom: 16px;
+    }
+
+    /* Discount Responsive CSS */
+    .discount-container,
+    .discount-container-2 {
+        width: 388px;
+        height: 500px;
+        margin: 16px auto;
+    }
+
+    .discount-card h6,
+    .discount-card-2 h6 {
+        font-size: 16px;
+        margin-top: -4px;
+    }
+
+    .requirments {
+        flex-wrap: wrap;
+        gap: 12px !important;
+    }
+
+    .discount-card,
+    .discount-card-2 {
+        width: 354px;
+        height: 297px;
+        padding: 25px;
+        top: 180px;
+        left: 16px;
+    }
+
+    .discount-description p {
+        font-size: 14px;
+        width: 254px;
+        height: 48px;
+        overflow: hidden;
+    }
+
+    .title-description {
+        font-size: 20px;
+    }
+
+    .secondary-button {
+        width: 130px;
+        height: 40px;
+        margin-top: 13px;
+    }
+
+    .package-button {
+        width: 180px;
+        height: 48px;
+    }
+
+    .package-button a {
+        font-size: 16px;
+    }
+
+    /* Perfect Responsive CSS */
+    .perfect-container{
+        width: 388px;
+    }
+    .perfect-section video {
+        width: 388px;
+        height: 200px;
     }
 }
