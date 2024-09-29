@@ -16,6 +16,7 @@
 }
 
 /* Started Button CSS */
+/* primary button */
 .primary-button {
     width: 174px;
     height: 52px;
@@ -28,7 +29,34 @@
     transition: .5s;
 }
 
-.primary-button a {
+/* secondary button */
+.secondary-button {
+    width: 150px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #FF5400;
+    transition: .5s;
+    margin-top: 24px;
+}
+
+/* package button */
+.package-button {
+    width: 210px;
+    height: 52px;
+    border-radius: 8px;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+/* All Button general CSS */
+.primary-button a,
+.secondary-button a,
+.package-button a {
     color: #FFF;
     font-family: var(--font);
     font-size: 20px;
@@ -38,7 +66,9 @@
     text-decoration: none;
 }
 
-.primary-button:hover {
+.primary-button:hover,
+.secondary-button:hover,
+.package-button:hover {
     transform: translateY(-5px);
     background-color: #ff6e0a;
 }
@@ -235,6 +265,10 @@
 }
 
 /* Service section CSS */
+.service-section {
+    margin-bottom: 100px;
+}
+
 .title-description {
     color: #131318;
     font-family: var(--font);
@@ -280,12 +314,102 @@
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
     padding: 32px;
-    align-self:center;
+    align-self: center;
 }
 
 .map img,
 .price-tag img {
     margin-bottom: 32px;
+}
+
+/* Discount Section CSS */
+
+.discount-container {
+    position: relative;
+    background-image: url(/Images/Rectangle\ 12.png);
+    width: 100%;
+    border-radius: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1170px;
+    height: 500px;
+    flex-shrink: 0;
+    margin-bottom: 24px;
+}
+
+.discount-card {
+    position: absolute;
+    width: 579px;
+    height: 389px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 50px;
+    top: 56px;
+    right: 56px;
+}
+
+.discount-container-2 {
+    position: relative;
+    background-image: url(/Images/Rectangle\ 13.png);
+    width: 100%;
+    border-radius: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1170px;
+    height: 500px;
+    flex-shrink: 0;
+    margin-bottom: 24px;
+}
+
+.discount-card-2 {
+    position: absolute;
+    width: 579px;
+    height: 389px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 50px;
+    top: 56px;
+    left: 56px;
+}
+
+.requirments img {
+    width: 24px;
+    height: 24px;
+}
+
+.requirments p {
+    color: #5A5A5D;
+    font-family: var(--font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.discount-description p {
+    width: 452px;
+    color: #5A5A5D;
+    font-family: var(--font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.discount-card h6,
+.discount-card-2 h6 {
+    color: var(--primary-color);
+    font-family: var(--font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
 }
 
 /* Mobile device Responsive css*/
@@ -397,7 +521,7 @@
 
     /* Service Responsive CSS */
     .service-section {
-        margin-top: -74px;
+        margin: -74px 0;
     }
 
     .section-content {
@@ -410,13 +534,15 @@
         align-self: center;
     }
 
-    .service-card .map, .service-card .price-tag {
+    .service-card .map,
+    .service-card .price-tag {
         width: 382px;
         height: 289px;
         overflow: hidden;
     }
 
-    .service-card .map p, .service-card .price-tag p {
+    .service-card .map p,
+    .service-card .price-tag p {
         width: 300px;
     }
 
