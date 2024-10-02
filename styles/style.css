@@ -302,7 +302,7 @@
 }
 
 .hotel {
-    width: 573px;
+    /* width: 573px; */
     height: 284px;
     flex-shrink: 0;
     border-radius: 16px;
@@ -314,7 +314,7 @@
 }
 
 .map {
-    width: 573px;
+    /* width: 573px; */
     height: 284px;
     flex-shrink: 0;
     border-radius: 16px;
@@ -337,7 +337,7 @@
 }
 
 .price-tag {
-    width: 573px;
+    /* width: 573px; */
     height: 284px;
     flex-shrink: 0;
     border-radius: 16px;
@@ -545,6 +545,59 @@ hr {
     line-height: normal;
 }
 
+/* FOOTER SECTION CSS */
+.footer-section {
+    background: rgba(19, 19, 24, 0.05);
+    margin-top: 100px;
+    padding: 110px 0;
+    text-align: center;
+}
+
+.footer-section .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.footer-container p {
+    color: #5A5A5D;
+    text-align: center;
+    font-family: var(--font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+    margin-top: 15px;
+    margin-bottom: 32px;
+}
+
+.footer-container .icon i {
+    font-size: 24px;
+    color: #131318;
+    transition: .3s;
+}
+
+.footer-container .icon a {
+    transition: 0.6s;
+}
+
+.footer-container .icon a:hover {
+    transform: translateY(-6px);
+}
+
+.footer-container .icon i:hover {
+    color: var(--primary-color);
+}
+
+.footer-container hr {
+    width: 850px;
+    margin: 50px 0;
+}
+
 /* ----Mobile device Responsive css---*/
 /* ----Mobile device Responsive css---*/
 
@@ -557,11 +610,10 @@ hr {
 
     /* Hero responsive csss */
     .banner-section {
-        margin-top: 20px;
+        margin-top: -10px;
     }
 
     .hero-container {
-        width: 390px;
         height: 583px;
         /* flex-shrink: 0; */
         padding-top: 32px;
@@ -624,16 +676,6 @@ hr {
         line-height: normal;
     }
 
-    .section-content p {
-        color: rgba(19, 19, 24, 0.70);
-        font-family: var(--font);
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        /* 171.429% */
-    }
-
     .section-description {
         color: rgba(19, 19, 24, 0.70);
         text-align: center;
@@ -670,21 +712,22 @@ hr {
     .service-card {
         display: flex;
         flex-direction: column;
-        align-self: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .hotel,
     .service-card .map,
     .service-card .price-tag {
-        width: 388px;
+        width: 100%;
         height: 289px;
         overflow: hidden;
+        margin: 0 auto;
     }
 
-    .hotel .service-card .map p,
+    /* .hotel .service-card .map p,
     .service-card .price-tag p {
-        width: 300px;
-    }
+        /* width: 300px; */
 
     .hotel img,
     .map img,
@@ -711,12 +754,13 @@ hr {
         gap: 12px !important;
     }
 
+
     .discount-card,
     .discount-card-2 {
         width: 354px;
         height: 297px;
         padding: 25px;
-        top: 180px;
+        top: 187px;
         left: 16px;
     }
 
@@ -748,12 +792,13 @@ hr {
 
     /* Perfect Responsive CSS */
     .perfect-container {
-        width: 388px;
+        /* width: 388px; */
+        margin: 0 auto;
     }
 
     .perfect-section video {
-        width: 388px;
-        height: 200px;
+        /* width: 388px; */
+        height: 300px;
     }
 
     /* Newsletter Responsive CSS */
@@ -770,7 +815,8 @@ hr {
     }
 
     .newsletter-form {
-        width: 375px;
+        /* width: 375px; */
+        width: 100%;
         padding: 25px;
         margin: 0 auto 16px auto;
     }
@@ -805,5 +851,185 @@ hr {
         font-style: normal;
         font-weight: 800;
         line-height: normal;
+    }
+
+    /* FOOTER RESPONSIVE CSS */
+    .footer-container p {
+        color: #5A5A5D;
+        text-align: center;
+        font-family: var(--font);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 171.429% */
+        margin: 16px 0;
+    }
+
+    .footer-container hr {
+        width: 350px;
+        margin: 25px 0;
+    }
+}
+
+/* hgfgfjhhj
+ */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .hero-container {
+        height: 800px;
+        padding-top: 50px;
+    }
+
+    .hero-container h1 {
+        font-size: 44px;
+    }
+
+    .hero-container p {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+
+    .select-form {
+        display: flex;
+        width: 400px;
+        padding: 16px;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin-top: 88px;
+    }
+
+    .form-box {
+        width: 300px;
+        height: 60px;
+        /* flex-shrink: 0; */
+    }
+
+    .hotel,
+    .service-card .map,
+    .service-card .price-tag {
+        /* width: 388px; */
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .discount-container,
+    .discount-container-2 {
+        width: 100%;
+        height: 600px;
+        margin: 16px auto;
+    }
+
+    .discount-card,
+    .discount-card-2 {
+        width: 390px;
+        height: 360px;
+        padding: 20px;
+        top: 200px;
+        left: 66px;
+        overflow: hidden;
+    }
+
+    /* ---------- */
+
+    .section-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 6px;
+    }
+
+    .section-title {
+        color: #131318;
+        font-family: var(--font);
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .section-content .section-description {
+        color: rgba(19, 19, 24, 0.70);
+        font-family: var(--font);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        width: 500px;
+        /* 162.5% */
+    }
+    .perfect-container {
+        /* width: 388px; */
+        margin: 0 auto;
+    }
+
+    .perfect-section video {
+        /* width: 388px; */
+        width: 100%;
+        height: 300px;
+    }
+
+
+    .footer-container hr {
+        width: 450px;
+        margin: 25px 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .select-form {
+        width: 600px;
+        gap: 8px;
+    }
+
+    .form-box {
+        width: 140px;
+    }
+    .popular-container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .newsletter-form{
+        width: 100%;
+        overflow: hidden;
+    }
+    hr {
+        width: 320px;
+    }
+    .image img{
+        width: 100%;
+    }
+    .email,
+    .name,
+    .subscribe-button {
+        width: 320px;
+        height: 52px;
+        flex-shrink: 0;
+    }
+    .newsletter-section .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .newsletter-section .col-md-7 {
+        width: 100%;
+    }
+   
+    .footer-container hr {
+        width: 550px;
+        margin: 25px 0;
+    }
+}
+
+
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+    .email,
+    .name,
+    .subscribe-button, 
+    .discount-description p, 
+    hr {
+        width: 100%;
     }
 }
